@@ -1,74 +1,50 @@
-# 🚀 My Portfolio — React + Vite + GitHub Pages
+# 🚀 Karthik Reddy — Portfolio
 
-A dark, editorial-styled developer portfolio with live GitHub project fetching, smooth animations, and full responsiveness.
+A modern, high-performance developer portfolio built with **React** and **Vite**, featuring a clean "lite purple" aesthetic, custom interactive elements, and live project fetching.
 
-## ✏️ Step 1: Personalize (takes 5 minutes)
+## ✨ Key Features
 
-Open `src/App.jsx` and edit the `CONFIG` object at the top:
+- **🎨 Lite Purple Theme**: A custom-designed, dark-mode editorial theme with harmonious purple accents.
+- **🖱️ Custom "Squircle" Cursor**: A unique, interactive custom cursor that adapts to your mouse movements and handles link hovering.
+- **📁 GitHub API Integration**: Dynamically fetches and displays my latest public repositories directly from GitHub.
+- **📱 Fully Responsive**: Optimized for all screen sizes, from mobile phones to high-resolution desktops.
+- **🚀 One-Click Deployment**: Pre-configured with `gh-pages` for seamless hosting on GitHub Pages.
 
-```js
-const CONFIG = {
-  name:      "Your Full Name",
-  title:     "Full Stack Developer",
-  tagline:   "Your one-liner pitch.",
-  bio:       "A few sentences about yourself.",
-  github:    "your-github-username",   // ← GitHub API will auto-fetch your repos!
-  linkedin:  "your-linkedin-slug",
-  email:     "you@email.com",
-  resumeUrl: "/portfolio/resume.pdf",  // put your resume.pdf in the /public folder
-  skills: { ... },     // edit skill categories
-  experience: [ ... ], // edit job history
-}
-```
+## 📦 Technical Stack
 
-## 📁 Step 2: Add your resume
+- **Frontend Framework**: [React 18](https://react.dev/)
+- **Build Tool**: [Vite](https://vitejs.dev/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Deployment**: [GitHub Pages](https://pages.github.com/)
 
-1. Place your `resume.pdf` in the `/public` folder
-2. Update `resumeUrl: '/portfolio/resume.pdf'` in CONFIG
+## 🔗 Links & Socials
 
-## ⚙️ Step 3: Update the base path
+- **Live Demo**: [reddykarthik2002.github.io/portfolio](https://reddykarthik2002.github.io/portfolio/)
+- **LinkedIn**: [Karthik Reddy](https://www.linkedin.com/in/karthik-reddy-2002dec)
+- **Email**: [karthik.reddy01219@gmail.com](mailto:karthik.reddy01219@gmail.com)
 
-In `vite.config.js`, change `base` to match your **GitHub repo name**:
+## 🛠️ Local Development
 
-```js
-// If your repo URL is: github.com/yourname/my-portfolio
-base: '/my-portfolio/',
-```
-
-## 🛠 Local Development
+To run this project locally on your machine:
 
 ```bash
+# Install dependencies
 npm install
-npm run dev       # → http://localhost:5173/portfolio/
+
+# Start the development server
+npm run dev
 ```
 
-## 🌐 Deploy to GitHub Pages (Automatic)
+## 🌐 How to Deploy
 
-This repo includes a **GitHub Actions workflow** that auto-deploys on every push to `main`.
+I use a custom `deploy.bat` script to automate the deployment process:
 
-### One-time setup:
-1. Push this project to a new GitHub repo
-2. Go to **Settings → Pages**
-3. Under **Source**, select **GitHub Actions**
-4. Push to `main` — your site will be live at:
-   `https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/`
-
-That's it! Every future `git push` auto-deploys.
-
-## 🏗 Manual Deploy (alternative)
-
-```bash
-npm run build
-# Then push the /dist folder to the gh-pages branch
-```
-
-## 📦 Tech Stack
-
-- **React 18** + **Vite**
-- **Framer Motion** — animations
-- **Lucide React** — icons
-- **GitHub REST API** — live project fetching
-- **Google Fonts** — Clash Display + DM Sans
+1. Double-click **`deploy.bat`** in the root directory.
+2. The script will:
+   - Push your latest local changes to the `main` branch.
+   - Build the production version of the site.
+   - Publish it live to the `gh-pages` branch.
 
 ---
-Built with ❤️ and deployed on GitHub Pages.
+Built with ❤️ by **Karthik Reddy**.
