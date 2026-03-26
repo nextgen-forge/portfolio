@@ -20,7 +20,7 @@ A modern, high-performance developer portfolio built with **React** and **Vite**
 
 ## 🔗 Links & Socials
 
-- **Live Demo**: [reddykarthik2002.github.io/portfolio](https://reddykarthik2002.github.io/portfolio/)
+- **Live Demo**: [nextgen-forge.github.io/portfolio](https://nextgen-forge.github.io/portfolio/)
 - **LinkedIn**: [Karthik Reddy](https://www.linkedin.com/in/karthik-reddy-2002dec)
 - **Email**: [karthik.reddy01219@gmail.com](mailto:karthik.reddy01219@gmail.com)
 

@@ -9,58 +9,59 @@ import './App.css'
 
 const CONFIG = {
   name: "Karthik Reddy",
-  title: "Full Stack Developer",
+  titles: ["Full Stack Developer", "Data Analyst", "Vide Coding", "UI / UX Designer"],
   tagline: "Building elegant, scalable, and data-driven web applications.",
-  bio: "Full Stack Developer and MCA graduate with hands-on experience in React.js, Node.js, and SQL. Currently interning at Clyptus Software Solutions, I've delivered internal tools processing 10,000+ records and BI dashboards that reduced stakeholder analysis time by 30%. Passionate about crafting responsive frontends and robust backends.",
-  github: "reddykarthik2002",
+  bio: "Full Stack Developer and MCA graduate with hands-on experience designing, building, and deploying web applications using React.js, Node.js, JavaScript, TypeScript, SQL, and REST APIs. Skilled in responsive front-end development, interactive data dashboards, and cloud deployment via Firebase Studio and Vercel. Proven ability to deliver internal tools processing 10,000+ records and BI dashboards that reduced stakeholder analysis time by 30%.",
+  github: "nextgen-forge",
   linkedin: "karthik-reddy-2002dec",
   email: "karthik.reddy01219@gmail.com",
   phone: "+91 96407-22212",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/Resume.pdf",
   skills: {
-    "Languages":   ["JavaScript (ES6+)", "TypeScript", "Python", "SQL", "Java", "HTML5", "CSS3"],
-    "Frontend":    ["React.js", "Bootstrap", "Tailwind CSS", "Responsive UI Design"],
+    "Languages":   ["JavaScript (ES6+)", "TypeScript", "Python", "SQL", "Java (Basics)", "HTML5", "CSS3"],
+    "Frontend":    ["React.js", "Bootstrap", "Tailwind CSS", "Figma", "Responsive UI Design"],
     "Backend":     ["Node.js", "REST API Design", "SQLite", "MySQL", "SQL Server", "MongoDB"],
-    "Cloud & Tools":["Firebase Studio", "Vercel", "AWS (Basics)", "Git / GitHub", "Power BI", "Pandas"],
+    "Cloud & DevOps":["Firebase", "Vercel", "AWS (Basics)", "Git / GitHub"],
+    "Data & BI Tools":["Power BI", "DAX", "Pandas", "Python Data Analysis"],
   },
   experience: [
     {
       role: "Software Developer Intern",
-      company: "Clyptus Software Solutions",
-      period: "Jan 2024 – Present",
-      desc: "Developed full-stack internal web apps using Firebase Studio & Vercel. Built Power BI KPI dashboards for real-time tracking across 10,000+ records and designed REST API-integrated React interfaces.",
+      company: "Clyptus Software Solutions, Hyderabad",
+      period: "2024 – Present",
+      desc: "Developed and deployed full-stack internal web applications using Firebase Studio, hosted on Vercel for company-wide access. Built and maintained Power BI KPI dashboards for real-time revenue and sales tracking, analyzing 10,000+ records across multiple business units. Designed REST API-integrated front-end interfaces using React.js, improving internal data visibility and stakeholder reporting efficiency.",
     },
     {
       role: "Web Development Intern",
-      company: "Blue Bright Innovation Circles",
+      company: "Blue Bright Innovation Circles Pvt. Ltd.",
       period: "2023 – 2024",
-      desc: "Developed responsive web apps using JS/HTML/CSS. Improved website usability by 30% through UI optimization and analyzed user behavior patterns to support data-driven design decisions.",
+      desc: "Developed responsive web applications using HTML, CSS, and JavaScript, ensuring cross-device compatibility. Improved website usability by analyzing user behaviour patterns and optimizing UI responsiveness. Collaborated with the development team to enhance data presentation through interactive dashboards and reusable UI components.",
     },
   ],
   projects: [
     {
       name: "Finflow – Personal Finance Dashboard",
-      desc: "Full-stack finance app with React.js frontend and SQLite. Features monthly analytics, interactive charts (bar, donut, line), and CSV export. Designed a responsive dark-themed UI.",
+      desc: "Built a full-stack personal finance web application using a React.js front end and SQLite database, featuring monthly analytics and category-level breakdowns. Implemented interactive charts (bar, donut, line) for income/expense tracking, budget monitoring, and CSV data export.",
       tech: ["React.js", "SQLite", "JavaScript", "HTML", "CSS"],
       date: "Mar 2025",
-      github: "https://github.com/reddykarthik2002/Finflow",
-      live: null,
+      github: "https://github.com/nextgen-forge/Finflow",
+      live: "https://nextgen-forge.github.io/Finflow/",
     },
     {
       name: "Retail Store Sales Performance Dashboard",
-      desc: "Analyzed 50,000+ records using Python/Pandas. Built Power BI dashboard with custom DAX measures, identifying the top 10% products driving 35% of total revenue.",
-      tech: ["Python", "Pandas", "Power BI", "Excel"],
-      date: "June 2024",
-      github: "https://github.com/reddykarthik2002/Retail-Store-Sales-Performance-Dashboard",
+      desc: "Cleaned and preprocessed raw retail sales data using Python and Pandas. Built a Power BI dashboard with custom DAX measures across 50,000+ records, identifying the top 10% of products responsible for 35% of total revenue. Visualized year-over-year growth and regional performance splits.",
+      tech: ["Python", "Pandas", "Power BI", "SQL"],
+      date: "Jan 2025",
+      github: "https://github.com/nextgen-forge/Retail-Store-Sales-Performance-Dashboard",
       live: null,
     },
     {
-      name: "AI Personal Assistant – Chatbot",
-      desc: "AI chatbot using Google Gemini API with real-time conversation and session memory. Implemented persona-switching logic and multi-turn history management.",
-      tech: ["JavaScript", "HTML", "CSS", "Gemini API"],
+      name: "AI Personal Assistant – Chatbot Web Application",
+      desc: "Built and deployed an AI chatbot integrating the Google Gemini API, featuring real-time conversation, custom personas, and session memory. Implemented async JavaScript API calls and multi-turn conversation history management.",
+      tech: ["JavaScript", "HTML", "CSS", "Google Gemini API"],
       date: "Dec 2024",
-      github: "https://github.com/reddykarthik2002/AI-Personal-Assistant",
-      live: "https://reddykarthik2002.github.io/AI-Personal-Assistant",
+      github: "https://github.com/nextgen-forge/AI-Personal-Assistant",
+      live: "https://nextgen-forge.github.io/AI-Personal-Assistant",
     },
   ],
   certifications: [
@@ -71,14 +72,29 @@ const CONFIG = {
     { name: "Google UX Design", org: "Coursera" },
     { name: "Node.js, React.js, JS, Angular.js", org: "Infosys Springboard" },
   ],
-  education: {
-    degree: "Master of Computer Applications (MCA)",
-    university: "Chandigarh University",
-    cgpa: "7.45",
-  }
+  education: [
+    {
+      degree: "Master of Computer Applications (MCA)",
+      university: "Chandigarh University",
+      period: "2023 – Present",
+      meta: "CGPA: 7.45",
+    },
+    {
+      degree: "Bachelor of Science (B.Sc.)",
+      university: "Acharya Nagarjuna University",
+      period: "2020 – 2023",
+      meta: "Percentage: 60%",
+    },
+    {
+      degree: "Intermediate (10+2)",
+      university: "Sri Chaitanya, Vijayawada",
+      period: "2018 – 2020",
+      meta: "Percentage: 89%",
+    },
+  ]
 }
 
-const skillIcons = { "Languages": Code2, "Frontend": Layers, "Backend": Server, "Cloud & Tools": Terminal }
+const skillIcons = { "Languages": Code2, "Frontend": Layers, "Backend": Server, "Cloud & DevOps": Globe, "Data & BI Tools": Database }
 const langColors = { JavaScript:"#f7df1e", TypeScript:"#3178c6", Python:"#3572A5", Go:"#00ADD8", CSS:"#563d7c", HTML:"#e34c26", "HTML/CSS":"#e34c26" }
 
 const fadeUp = { hidden:{opacity:0,y:40}, show:{opacity:1,y:0,transition:{duration:0.6,ease:[0.22,1,0.36,1]}} }
@@ -149,6 +165,11 @@ function Navbar({sections}) {
 }
 
 function Hero() {
+  const [titleIdx, setTitleIdx] = useState(0)
+  useEffect(() => {
+    const itv = setInterval(() => setTitleIdx(prev => (prev + 1) % CONFIG.titles.length), 3000)
+    return () => clearInterval(itv)
+  }, [])
   const {scrollY} = useScroll()
   const y = useTransform(scrollY,[0,600],[0,-120])
   const op = useTransform(scrollY,[0,400],[1,0])
@@ -163,7 +184,18 @@ function Hero() {
           <span className="accent">Karthik</span> Reddy
         </motion.h1>
         <motion.h2 className="hero__title" variants={fadeUp} initial="hidden" animate="show" transition={{delay:0.2}}>
-          {CONFIG.title}
+          <AnimatePresence mode="wait">
+            <motion.span
+              key={CONFIG.titles[titleIdx]}
+              initial={{ y: 20, opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: -20, opacity: 0 }}
+              transition={{ duration: 0.5, ease: "easeInOut" }}
+              style={{ display: 'inline-block' }}
+            >
+              {CONFIG.titles[titleIdx]}
+            </motion.span>
+          </AnimatePresence>
         </motion.h2>
         <motion.p className="hero__tagline" variants={fadeUp} initial="hidden" animate="show" transition={{delay:0.3}}>
           {CONFIG.tagline}
@@ -200,13 +232,13 @@ function About() {
               <div className="edu-card">
                 <span className="edu-card__icon"><Award size={16}/></span>
                 <div>
-                  <strong>{CONFIG.education.degree}</strong>
-                  <span>{CONFIG.education.university} &nbsp;·&nbsp; CGPA: {CONFIG.education.cgpa}</span>
+                  <strong>{CONFIG.education[0].degree}</strong>
+                  <span>{CONFIG.education[0].university} &nbsp;·&nbsp; {CONFIG.education[0].meta}</span>
                 </div>
               </div>
             </div>
             <div className="about__stats">
-              {[["1+","Years Exp."],["3","Projects"],["9","Certifications"],["5+","Technologies"]].map(([n,l]) => (
+              {[["1+","Experience"],["3","Projects"],["10+","Certifications"],["6+","Skills"]].map(([n,l]) => (
                 <div key={l} className="stat"><span className="stat__num accent">{n}</span><span className="stat__label">{l}</span></div>
               ))}
             </div>
@@ -327,18 +359,20 @@ function Experience() {
               </div>
             </motion.div>
           ))}
-          <motion.div className="timeline__item" variants={fadeUp}>
-            <div className="timeline__dot timeline__dot--edu"/>
-            <div className="timeline__content">
-              <div className="timeline__header">
-                <div>
-                  <h3 className="timeline__role">{CONFIG.education.degree}</h3>
-                  <span className="timeline__company accent">{CONFIG.education.university}</span>
+          {CONFIG.education.map((edu, i) => (
+            <motion.div key={i} className="timeline__item" variants={fadeUp}>
+              <div className="timeline__dot timeline__dot--edu"/>
+              <div className="timeline__content">
+                <div className="timeline__header">
+                  <div>
+                    <h3 className="timeline__role">{edu.degree}</h3>
+                    <span className="timeline__company accent">{edu.university}</span>
+                  </div>
+                  <span className="timeline__period"><Award size={13}/> {edu.period} &nbsp;·&nbsp; {edu.meta}</span>
                 </div>
-                <span className="timeline__period"><Award size={13}/> CGPA {CONFIG.education.cgpa}</span>
               </div>
-            </div>
-          </motion.div>
+            </motion.div>
+          ))}
         </div>
       </motion.div>
     </section>
