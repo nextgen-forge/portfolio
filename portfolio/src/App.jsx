@@ -16,7 +16,7 @@ const CONFIG = {
   linkedin: "karthik-reddy-2002dec",
   email: "karthik.reddy01219@gmail.com",
   phone: "+91 96407-22212",
-  resumeUrl: "/Resume.pdf",
+  resumeUrl: "Resume.pdf",
   skills: {
     "Languages":   ["JavaScript (ES6+)", "TypeScript", "Python", "SQL", "Java (Basics)", "HTML5", "CSS3"],
     "Frontend":    ["React.js", "Bootstrap", "Tailwind CSS", "Figma", "Responsive UI Design"],
