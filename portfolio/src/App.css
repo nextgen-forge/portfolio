@@ -47,8 +47,8 @@ ul { list-style: none; }
   pointer-events: none; z-index: 9999;
   border-radius: 50%;
 }
-.cursor-dot  { width: 10px; height: 10px; background: var(--accent); border-radius: 3px; }
-.cursor-ring { width: 45px; height: 45px; border: 2px solid var(--accent); border-radius: 10px; }
+.cursor-dot  { width: 6px; height: 6px; background: var(--accent); border-radius: 2px; }
+.cursor-ring { width: 28px; height: 28px; border: 1.5px solid var(--accent); border-radius: 6px; }
 @media (hover: none) { .cursor-dot, .cursor-ring { display: none; } body { cursor: auto; } button { cursor: pointer; } }
 
 /* ── Navbar ─────────────────────────────────── */

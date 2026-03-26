@@ -1,29 +1,39 @@
 @echo off
 echo.
 echo ==============================================
-echo   DEPLOYING PORTFOLIO TO GITHUB
+echo   STEP 1: PUSHING TO GITHUB
 echo ==============================================
-echo.
+git add .
+git commit -m "update portfolio"
+git push origin main
+if %errorlevel% neq 0 (
+    echo.
+    echo ERROR: Could not push to GitHub. 
+    echo Please make sure you have the 'portfolio' repo created
+    echo and that you have entered your credentials correctly.
+    pause
+    exit /b %errorlevel%
+)
 
-:: 1. Initialize or update Git
-git init
-git remote add origin https://github.com/reddykarthik2002/portfolio.git 2>nul
-git branch -M main
-
-:: 2. Push to GitHub (This may ask for your password/token)
 echo.
-echo Step 1: Pushing code to GitHub...
-git push -u origin main
-
-:: 3. Deploy to GitHub Pages
-echo.
-echo Step 2: Deploying to GitHub Pages...
+echo ==============================================
+echo   STEP 2: DEPLOYING TO GITHUB PAGES
+echo ==============================================
 npm run deploy
+if %errorlevel% neq 0 (
+    echo.
+    echo ERROR: Could not deploy to GitHub Pages.
+    pause
+    exit /b %errorlevel%
+)
 
 echo.
 echo ==============================================
-echo   DEPLOYMENT COMPLETE!
-echo   Your site should be live at:
-echo   https://reddykarthik2002.github.io/portfolio/
+echo   SUCCESS! 
 echo ==============================================
+echo Your site is now being published.
+echo 1. Go to GitHub Settings > Pages
+echo 2. Select 'gh-pages' branch from the dropdown
+echo 3. Click 'Save'
+echo.
 pause

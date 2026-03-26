@@ -10,31 +10,37 @@ import './App.css'
 const CONFIG = {
   name: "Karthik Reddy",
   title: "Full Stack Developer",
-  tagline: "Building elegant, data-driven web applications — from pixel to production.",
-  bio: "MCA graduate and Full Stack Developer based in Hyderabad, India. I love crafting responsive frontends with React.js, building RESTful backends, and turning raw data into meaningful dashboards. Currently interning at Clyptus Software Solutions, shipping full-stack apps on Vercel and Power BI KPI dashboards analyzing 10,000+ records.",
+  tagline: "Building elegant, scalable, and data-driven web applications.",
+  bio: "Full Stack Developer and MCA graduate with hands-on experience in React.js, Node.js, and SQL. Currently interning at Clyptus Software Solutions, I've delivered internal tools processing 10,000+ records and BI dashboards that reduced stakeholder analysis time by 30%. Passionate about crafting responsive frontends and robust backends.",
   github: "reddykarthik2002",
   linkedin: "karthik-reddy-2002dec",
   email: "karthik.reddy01219@gmail.com",
   phone: "+91 96407-22212",
   resumeUrl: "/resume.pdf",
   skills: {
-    "Languages":   ["JavaScript (ES6+)", "Python", "SQL", "Java (Basics)", "HTML5", "CSS3"],
-    "Frontend":    ["React.js", "Bootstrap", "Tailwind CSS", "Responsive UI"],
+    "Languages":   ["JavaScript (ES6+)", "TypeScript", "Python", "SQL", "Java", "HTML5", "CSS3"],
+    "Frontend":    ["React.js", "Bootstrap", "Tailwind CSS", "Responsive UI Design"],
     "Backend":     ["Node.js", "REST API Design", "SQLite", "MySQL", "SQL Server", "MongoDB"],
-    "Cloud & Tools":["Firebase Studio", "Vercel", "AWS (Basics)", "Git / GitHub", "Power BI"],
+    "Cloud & Tools":["Firebase Studio", "Vercel", "AWS (Basics)", "Git / GitHub", "Power BI", "Pandas"],
   },
   experience: [
     {
       role: "Software Developer Intern",
       company: "Clyptus Software Solutions",
-      period: "2024 – Present",
-      desc: "Developed and deployed internal web apps using Firebase Studio, hosted on Vercel for company-wide access. Built Power BI KPI dashboards for real-time revenue and sales performance tracking across 10,000+ records.",
+      period: "Jan 2024 – Present",
+      desc: "Developed full-stack internal web apps using Firebase Studio & Vercel. Built Power BI KPI dashboards for real-time tracking across 10,000+ records and designed REST API-integrated React interfaces.",
+    },
+    {
+      role: "Web Development Intern",
+      company: "Blue Bright Innovation Circles",
+      period: "2023 – 2024",
+      desc: "Developed responsive web apps using JS/HTML/CSS. Improved website usability by 30% through UI optimization and analyzed user behavior patterns to support data-driven design decisions.",
     },
   ],
   projects: [
     {
       name: "Finflow – Personal Finance Dashboard",
-      desc: "Full-stack finance app with React.js frontend and SQLite database. Features monthly analytics, category breakdowns, interactive charts (bar, donut, line), budget monitoring, savings goals, and CSV export.",
+      desc: "Full-stack finance app with React.js frontend and SQLite. Features monthly analytics, interactive charts (bar, donut, line), and CSV export. Designed a responsive dark-themed UI.",
       tech: ["React.js", "SQLite", "JavaScript", "HTML", "CSS"],
       date: "Mar 2025",
       github: "https://github.com/reddykarthik2002/Finflow",
@@ -42,15 +48,15 @@ const CONFIG = {
     },
     {
       name: "Retail Store Sales Performance Dashboard",
-      desc: "Cleaned 50,000+ records with Python & Pandas. Built Power BI dashboard with DAX measures — identified top 10% products driving 35% of revenue and reduced stakeholder manual analysis time by 30%.",
-      tech: ["Python", "Pandas", "Power BI", "SQL"],
-      date: "Jan 2025",
+      desc: "Analyzed 50,000+ records using Python/Pandas. Built Power BI dashboard with custom DAX measures, identifying the top 10% products driving 35% of total revenue.",
+      tech: ["Python", "Pandas", "Power BI", "Excel"],
+      date: "June 2024",
       github: "https://github.com/reddykarthik2002/Retail-Store-Sales-Performance-Dashboard",
       live: null,
     },
     {
-      name: "AI Personal Assistant – Chatbot Web App",
-      desc: "AI chatbot using the Google Gemini API with real-time conversation, custom personas, and session memory. Multi-turn chat via async JS API calls. Deployed live on GitHub Pages.",
+      name: "AI Personal Assistant – Chatbot",
+      desc: "AI chatbot using Google Gemini API with real-time conversation and session memory. Implemented persona-switching logic and multi-turn history management.",
       tech: ["JavaScript", "HTML", "CSS", "Gemini API"],
       date: "Dec 2024",
       github: "https://github.com/reddykarthik2002/AI-Personal-Assistant",
@@ -59,14 +65,11 @@ const CONFIG = {
   ],
   certifications: [
     { name: "Google Data Analytics", org: "Coursera" },
-    { name: "Google Cloud Data Analytics", org: "Coursera" },
-    { name: "Google UX Design", org: "Coursera" },
     { name: "Business Intelligence & Data Analytics", org: "Macquarie University" },
+    { name: "Google Cloud Data Analytics", org: "Coursera" },
     { name: "Python Programming", org: "University of Michigan" },
-    { name: "Node.js", org: "Infosys Springboard" },
-    { name: "React.js", org: "Infosys Springboard" },
-    { name: "JavaScript", org: "Infosys Springboard" },
-    { name: "Angular.js", org: "Infosys Springboard" },
+    { name: "Google UX Design", org: "Coursera" },
+    { name: "Node.js, React.js, JS, Angular.js", org: "Infosys Springboard" },
   ],
   education: {
     degree: "Master of Computer Applications (MCA)",
@@ -108,8 +111,8 @@ function Cursor() {
   },[])
   return (
     <>
-      <motion.div className="cursor-dot" animate={{x:pos.x-5,y:pos.y-5,scale:hovered?0:1}} transition={{type:'spring',stiffness:800,damping:35}}/>
-      <motion.div className="cursor-ring" animate={{x:pos.x-22.5,y:pos.y-22.5,scale:hovered?1.8:1,opacity:hovered?0.6:0.4}} transition={{type:'spring',stiffness:200,damping:25}}/>
+      <motion.div className="cursor-dot" animate={{x:pos.x-3,y:pos.y-3,scale:hovered?0:1}} transition={{type:'spring',stiffness:800,damping:35}}/>
+      <motion.div className="cursor-ring" animate={{x:pos.x-14,y:pos.y-14,scale:hovered?1.6:1,opacity:hovered?0.7:0.5}} transition={{type:'spring',stiffness:200,damping:25}}/>
     </>
   )
 }
