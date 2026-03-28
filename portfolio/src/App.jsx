@@ -91,7 +91,14 @@ const CONFIG = {
       period: "2018 – 2020",
       meta: "Percentage: 89%",
     },
-  ]
+  ],
+  repoDescriptions: {
+    "portfolio": "Professional portfolio website built with React, Vite, and Framer Motion. Features a dark editorial theme and dynamic GitHub integration.",
+    "Finflow": "Full-stack personal finance application with SQLite integration and interactive data visualizations.",
+    "karthik-portfolio": "An earlier iteration of my personal portfolio, focusing on clean UI and responsive design.",
+    "Retail-Store-Sales-Performance-Dashboard": "A Power BI dashboard analyzing 50,000+ retail records to identify revenue drivers and regional trends.",
+    "AI-Personal-Assistant": "Interactive chatbot powered by Google Gemini AI, featuring persistent conversation memory."
+  }
 }
 
 const skillIcons = { "Languages": Code2, "Frontend": Layers, "Backend": Server, "Cloud & DevOps": Globe, "Data & BI Tools": Database }
@@ -315,7 +322,7 @@ function Projects() {
                     </div>
                   </div>
                   <h3 className="project-card__name">{repo.name.replace(/-/g,' ')}</h3>
-                  <p className="project-card__desc">{repo.description||'No description provided.'}</p>
+                  <p className="project-card__desc">{repo.description || CONFIG.repoDescriptions[repo.name] || 'No description provided.'}</p>
                   <div className="project-card__footer">
                     {repo.language && <span className="lang"><span className="lang__dot" style={{background:langColors[repo.language]||'#888'}}/>{repo.language}</span>}
                     <span className="meta"><Star size={12}/>{repo.stargazers_count}</span>
